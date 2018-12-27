@@ -1,5 +1,24 @@
 body > * {
 	width:90%;
 	margin:auto;
-	font-family: "UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-B",sans-serif; 
+	color: #404040;
+	font-family: "UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-B", Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+em {
+	color: black;
+	font-size: 110%;
+	font-style: oblique;
+}
+
+h1,h2,h3 {
+	color: black;
+}
+
+p {
+	text-indent: 1em;
+}
+
+.head {
+	text-indent: 0px;
 }
