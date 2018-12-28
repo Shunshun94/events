@@ -11,12 +11,20 @@ em {
 	font-style: oblique;
 }
 
+strong {
+	
+}
+
 h1,h2,h3 {
 	color: black;
 }
 
 h2 {
-	margin-top: 2em;
+	margin-top: 20px;
+}
+
+h3 {
+	margin-bottom: 4px;
 }
 
 p {
