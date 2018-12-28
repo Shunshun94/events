@@ -16,7 +16,8 @@ em {
 }
 
 strong {
-	
+	color: black;
+	font-size: 120%;
 }
 
 h1,h2,h3 {
