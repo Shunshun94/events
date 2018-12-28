@@ -40,6 +40,10 @@ p {
 	text-indent: 0px;
 }
 
+.warn {
+	color: #330000;
+}
+
 footer {
 	margin-top: 28px;
 	font-size: 70%;
