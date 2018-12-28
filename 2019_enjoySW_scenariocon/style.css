@@ -1,8 +1,12 @@
+body {
+	background-image: url("./back.png");
+	font-family: "UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-B", Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	color: #303030;
+}
+
 body > * {
 	width:90%;
 	margin:auto;
-	color: #303030;
-	font-family: "UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-B", Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 }
 
 em {
@@ -28,7 +32,7 @@ h3 {
 }
 
 p {
-	line-height: 0.9em;	
+	line-height: 0.95em;	
 	text-indent: 1em;
 }
 
