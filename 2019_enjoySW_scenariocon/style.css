@@ -39,3 +39,9 @@ p {
 .head {
 	text-indent: 0px;
 }
+
+footer {
+	margin-top: 28px;
+	font-size: 70%;
+}
+
