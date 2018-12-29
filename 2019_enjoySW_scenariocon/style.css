@@ -4,6 +4,14 @@ body {
 	color: #303030;
 }
 
+header {
+	border-bottom: 3px #303030 dotted;
+}
+
+footer {
+	border-top: 1px #303030 solid;
+}
+
 body > * {
 	width:90%;
 	margin:auto;
@@ -24,8 +32,18 @@ h1,h2,h3 {
 	color: black;
 }
 
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 h2 {
 	margin-top: 20px;
+}
+
+#schedule > h3:before,
+#rule h3:before {
+	content: '●'
 }
 
 h3 {
@@ -33,16 +51,90 @@ h3 {
 }
 
 p {
-	line-height: 0.95em;	
+	line-height: 0.95em;
 	text-indent: 1em;
+}
+
+.regulation-rulebooks {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-collapse: collapse;
+}
+
+.regulation-rulebooks td {
+	padding: 4px;
+}
+
+.title-item-list {
+	list-style-type: none;
+	position: relative;
+	left: -2em;
+}
+
+.title-item-list > li {
+	position: relative;
+	margin-bottom: 4px;
+}
+
+.title-item-list-title {
+	background-color: #E0E0E0;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.title-item-list > li > ul {
+	list-style-type: none;
+	position: relative;
+	left: -2ex;
+	width: 100%;
+	background-image: url("./back.png");
 }
 
 .head {
 	text-indent: 0px;
 }
 
-.warn {
-	color: #330000;
+.warn-content,
+.warn-title {
+	color: #bf0000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.warn-title:before,
+.warn-title:after {
+	content: '◆'
+}
+
+.warn-content:before,
+.warn-content:after {
+	content:'☠'
+}
+
+.recomends > p {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.list-header {
+	padding-top:2px;
+	margin-left: 1em;
+}
+
+.list-header:before {
+	content: '（'
+}
+.list-header:after {
+	content:'）'
+}
+
+.list-content {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	list-style-type: none;
+	position: relative;
+	left: -1ex;
+	padding-bottom: 4px;
 }
 
 footer {

@@ -20,3 +20,7 @@ h2 {
 h3 {
 	font-size: 100%;
 }
+
+p {
+	text-indent: 0px;
+}
