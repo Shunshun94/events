@@ -95,7 +95,8 @@ p {
 }
 
 .warn-content,
-.warn-title {
+.warn-title,
+.warn-simple {
 	color: #bf0000;
 	margin-top: 0px;
 	margin-bottom: 0px;

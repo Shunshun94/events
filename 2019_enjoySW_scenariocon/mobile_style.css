@@ -25,6 +25,10 @@ p {
 	text-indent: 0px;
 }
 
+.system_name {
+	display:none;
+}
+
 .warn-content:before,
 .warn-content:after {
 	content:''
