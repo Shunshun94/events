@@ -66,8 +66,9 @@ p {
 }
 
 .title-item-list {
+	list-style-type: none;
 	position: relative;
-	left: -1em;
+	left: -3ex;
 }
 
 .title-item-list > li {
