@@ -70,13 +70,14 @@ p {
 }
 
 .regulation-rulebooks {
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 	border-collapse: collapse;
+	margin-left:3ex;
 }
 
 .regulation-rulebooks td {
-	padding: 4px;
+	padding: 8px;
 }
 
 .title-item-list {
