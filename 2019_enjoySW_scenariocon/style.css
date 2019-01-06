@@ -41,6 +41,14 @@ h2 {
 	margin-top: 20px;
 }
 
+#at_first > p > span {
+	padding-left: 1em;
+}
+
+#at_first > p > span.mobile_br {
+	padding-left: 0px;
+}
+
 #schedule > h3:before,
 #rule h3:before {
 	content: '●'
@@ -89,6 +97,17 @@ p {
 .title-item-list > li {
 	position: relative;
 	margin-bottom: 4px;
+}
+
+.title-item-list-numberLessItem {
+	display: inline-block;
+	width: 90%;
+}
+
+.title-item-list-numberLessNumber {
+	display: inline-block;
+	vertical-align: top;
+	width:4ex;
 }
 
 .title-item-list-title {

@@ -21,6 +21,10 @@ p {
 	line-height: 1.2em;
 }
 
+#at_first > p > span {
+	padding-left: 0px;
+}
+
 .schedule_date {
 	padding-left: 2em;
 	margin-top: 8px;
@@ -32,5 +36,13 @@ p {
 
 .warn-content:before,
 .warn-content:after {
-	content:''
+	content:'';
+}
+
+.mobile_br {
+	display: inline-block;
+}
+
+.title-item-list-numberLessItem {
+	width: 82%;
 }
