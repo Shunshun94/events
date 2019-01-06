@@ -91,6 +91,17 @@ p {
 	margin-bottom: 4px;
 }
 
+.title-item-list-numberLessItem {
+	display: inline-block;
+	width: 90%;
+	padding-left:1ex;
+}
+
+.title-item-list-numberLessNumber {
+	display: inline-block;
+	vertical-align: top;
+}
+
 .title-item-list-title {
 	background-color: #E0E0E0;
 	padding-left: 1em;

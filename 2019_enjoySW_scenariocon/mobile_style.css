@@ -32,5 +32,13 @@ p {
 
 .warn-content:before,
 .warn-content:after {
-	content:''
+	content:'';
+}
+
+.mobile_br {
+	display: block;
+}
+
+.title-item-list-numberLessItem {
+	width: 82%;
 }
