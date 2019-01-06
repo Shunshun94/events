@@ -49,6 +49,11 @@ h2 {
 	padding-left: 0px;
 }
 
+#schedule > h3,
+#schedule > p.schedule_date {
+	margin-left: 15px;
+}
+
 #schedule > h3:before,
 #rule h3:before {
 	content: '●'
