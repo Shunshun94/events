@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<pre id="result"></pre>
+<script>
+let scoreSheet = [];
+
+window.addEventListener('paste', (e)=>{
+	const items = e.clipboardData.items;
+	const length = items.length;
+
+	if (items[0].type.indexOf('text') >= 0) {
+		items[0].getAsString((str)=>{
+			const currentScoreSheet = str.split('\n').map((line)=>{return line.split('\t').map((v)=>{return Number(v);});});
+			if(scoreSheet.length) {
+				currentScoreSheet.forEach((line, rowIndex)=>{
+					line.forEach((value, colIndex)=>{
+						scoreSheet[rowIndex][colIndex] += value;
+					});
+				});
+			} else {
+				scoreSheet = currentScoreSheet;
+			}
+			const resultText = scoreSheet.map((line)=>{
+				return line.join('\t');
+			}).join('\n');
+			document.getElementById('result').innerHTML = resultText;
+		});
+	}
+});
+
+</script>
+
+</body>
+</html>
