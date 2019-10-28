@@ -1,0 +1,166 @@
+@charset "utf-8";
+* {
+	box-sizing:border-box;
+	font-family: "BIZ UDゴシック","UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-R", Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	width: 800px;
+	margin:auto;
+	margin-top: 12px;
+	padding-left: 12px;
+}
+h2, h3 {
+	border-bottom: black 3px double;
+	border-top: black 1px solid;
+}
+
+h4 {
+	border-bottom: black 3px double;
+}
+
+p {
+	margin-top:0px;
+	margin-bottom:0px;
+	margin:auto;
+	padding-top:4px;
+	padding-bottom:4px;
+	width: 800px;
+	line-height: 130%;
+	position: relative;
+}
+
+hr {
+	width: 800px;
+}
+
+sup {
+	color:blue;
+	font-weight: bold;
+	font-size: 80%;
+}
+sup:hover {
+	color:skyblue;
+}
+
+.tab0 {
+	padding-top:1em;
+	min-height:80px;
+}
+
+.tab0:nth-child(even) {
+	background-color: #F5F5FF;
+}
+
+.tab1 {
+	background-color: #F5F5F5;
+	font-size:70%;
+}
+
+.tab1 .name:before{
+	content:"【雑談】"
+}
+
+.tab9, .tab8 {
+	display:none;
+}
+
+.tab2 {
+	padding-right: 400px;
+}
+.tab2:nth-child(even) {
+	background-color: #FFF5F5;
+}
+
+.tab3 {
+	padding-left: 400px;
+}
+.tab3:nth-child(even) {
+	background-color: #F5FFF5;
+}
+
+.time {
+	display:none;
+}
+
+.name {
+	display:block;
+	position:absolute;
+	top:0px;
+	height:100px;
+	min-width:3em;
+	font-weight: bold;
+	vertical-align:top;
+}
+
+p > .name > .picFrame {
+	height:50px;
+	width:50px;
+	z-index:3;
+	border-radius:20px;
+	overflow:hidden;
+}
+
+.tab0 > .name > .picFrame > .pic {
+	width:150px;
+	height:200px;
+	background-size: contain;
+}
+
+._356513775911960578 > .name > .picFrame > .pic {
+	transform: translate(-48px, -5px);
+	background-image: url("./pics/pc_dragon_nazuna.png");
+}
+
+._317663954170019841 > .name > .picFrame > .pic {
+	transform: translate(-45px, -2px);
+	background-image: url("./pics/pc_dragon_blue.png");
+}
+
+._268686541163986954 > .name > .picFrame > .pic {
+	transform: translate(-48px, -2px);
+	background-image: url("./pics/pc_dragon_colo.png");
+}
+
+._539826451642449921 > .name > .picFrame > .pic {
+	transform: translate(-48px, -2px);
+	background-image: url("./pics/pc_dragon_gray.png");
+}
+
+.message {
+	display: block;
+	padding-left:4em;
+}
+
+header, footer {
+	font-size: 80%;
+}
+footer {
+	text-align: right;
+}
+
+.note {
+	display:none;
+	position:absolute;
+	background-color: #001100;
+	color: #FFFFFF;
+	max-width: 400px;
+	padding: 4px;
+	z-index:1;
+}
+.note a {
+	color: white;
+}
+
+.io-github-shunshun94-trpg-ReplayV3-removetab1 {
+	position: absolute;
+	right:4px;
+	top: 4px;
+	background-color:tomato;
+	color:white;
+	border-radius:4px;
+}
+
+.io-github-shunshun94-trpg-ReplayV3-removetab1:hover {
+	background-color:red;
+}
