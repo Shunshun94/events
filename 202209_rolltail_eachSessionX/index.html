@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:title" content="ロールテール回しあい（X指定） PC 一覧" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image"　content="https://shunshun94.github.io/shared/pics/ogp.jpg" />
+        <meta property="og:site_name" content="https://github.com/Shunshun94/events/" />
+        <meta property="og:description" content="ロールテールの X 指定回しあい PC 一覧" />
+        <title>ロールテール回しあい（X指定） PC 一覧</title>
+        <style>
+        * {
+            box-sizing: border-box;
+            font-family: "BIZ UDゴシック","UD Shin Go NT Light JIS2004","UD デジタル 教科書体 N-R", Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+        }
+        .io-github-shunshun94-trpg-ytsheet-HtmlGenerator-CLASSES-BASE {
+            display:inline-block;
+            margin-left:8px;
+            margin-bottom:8px;
+        }
+        #display {
+            width:820px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="display"></div>
+        <script src="https://shunshun94.github.io/shared/other/io/github/shunshun94/trpg/ytsheet/embedHtmlGenerator.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            const characterList = [
+                'https://rolltail.sakura.ne.jp/sw2.5/?id=yUkf7g',
+                'https://rolltail.sakura.ne.jp/sw2.5/?id=L2ThRC',
+                'https://yutorize.2-d.jp/ytsheet/sw2.5/?id=NQFYq2',
+                'https://rolltail.sakura.ne.jp/sw2.5/?id=ISdc2p',
+                'https://rolltail.sakura.ne.jp/sw2.5/?id=jY340Z',
+                'https://rolltail.sakura.ne.jp/sw2.5/?id=FMQnUP'
+            ];
+            const request = (url)=>{
+                return new Promise((resolve)=>{
+                    $.ajax({
+                        type:'get',
+                        url: `${url}&mode=json`,
+                        async:true,
+                        dataType:'jsonp'
+                    }).done(resolve);
+                });
+            };
+            Promise.all(characterList.map(request)).then((characters)=>{
+                characters.map((character,i)=>{
+                    return io.github.shunshun94.trpg.ytsheet.HtmlGenerator.generateSW25Html(character, {
+                        url:characterList[i],
+                        height: 200,
+                        width: 400,
+                        pictureWidth:140
+                    });
+                }).forEach((d)=>{
+                    $('#display').append(d);
+                });
+            });
+        </script>
+    </body>
+</html>
